@@ -1,12 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 
 export default function ConfirmationPage() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-
   useEffect(() => {
     // Fermer la fenêtre après 5 secondes
     const timer = setTimeout(() => {
@@ -38,7 +34,7 @@ export default function ConfirmationPage() {
           Email vérifié avec succès !
         </h1>
         <p className="text-gray-600 mb-6">
-          Vous pouvez maintenant retourner sur l'application Feedo AI et vous connecter.
+          Vous pouvez maintenant retourner sur l&apos;application Feedo AI et vous connecter.
         </p>
         <p className="text-sm text-gray-500">
           Cette fenêtre se fermera automatiquement dans quelques secondes...
